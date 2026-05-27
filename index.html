@@ -2,174 +2,328 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Saham Pro</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Saham Pro</title>
 
-<link rel="stylesheet" href="style.css">
+  <!-- FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- ICON -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css"/>
+
+  <link rel="stylesheet" href="style.css"/>
 </head>
 
 <body>
 
+<!-- BACKGROUND BLUR -->
+<div class="blur blur1"></div>
+<div class="blur blur2"></div>
+
+<!-- NAVBAR -->
 <header class="navbar">
-  <div class="brand">SAHAM PRO</div>
+
+  <div class="logo-area">
+    <img src="logo.png" alt="">
+    <span>Saham Pro</span>
+  </div>
 
   <nav>
     <a href="#fitur">Fitur</a>
     <a href="#membership">Membership</a>
     <a href="#testimoni">Testimoni</a>
   </nav>
+
 </header>
 
+<!-- HERO -->
 <section class="hero">
 
-  <img src="logo.png" class="logo">
+  <div class="hero-left" data-aos="fade-right">
 
-  <h1>Saham Pro Community</h1>
-
-  <p>
-    Analisis • Strategi • Profit Konsisten
-  </p>
-
-  <div class="hero-stats">
-
-    <div>
-      <h2>25.000+</h2>
-      <span>Member Aktif</span>
+    <div class="mini-badge">
+      <i class="fa-solid fa-chart-line"></i>
+      Indonesia Premium Stock Community
     </div>
 
-    <div>
-      <h2>92%</h2>
-      <span>Akurasi Analisa</span>
+    <h1>
+      Bangun Profit Konsisten <br>
+      Bersama <span>Saham Pro</span>
+    </h1>
+
+    <p>
+      Komunitas saham Indonesia dengan analisa premium,
+      signal harian, edukasi trading, dan market update realtime.
+    </p>
+
+    <div class="hero-buttons">
+
+      <a href="https://wa.me/6287832727925" class="btn primary">
+        Gabung Sekarang
+      </a>
+
+      <a href="#membership" class="btn secondary">
+        Lihat Membership
+      </a>
+
     </div>
 
-    <div>
-      <h2>24/7</h2>
-      <span>Market Update</span>
+    <div class="hero-info">
+
+      <div>
+        <h2>25.000+</h2>
+        <span>Active Member</span>
+      </div>
+
+      <div>
+        <h2>92%</h2>
+        <span>Win Rate</span>
+      </div>
+
+      <div>
+        <h2>24/7</h2>
+        <span>Market Update</span>
+      </div>
+
     </div>
 
   </div>
 
-  <a class="btn" href="https://wa.me/6287832727925">
-    Gabung Sekarang
-  </a>
+  <div class="hero-right" data-aos="fade-left">
+
+    <div class="phone-card">
+
+      <img src="logo.png" class="phone-logo">
+
+      <div class="signal-box up">
+        <span>BBCA</span>
+        <strong>+12.8%</strong>
+      </div>
+
+      <div class="signal-box">
+        <span>TLKM</span>
+        <strong>+9.2%</strong>
+      </div>
+
+      <div class="signal-box">
+        <span>ASII</span>
+        <strong>+7.6%</strong>
+      </div>
+
+    </div>
+
+  </div>
 
 </section>
 
-<section id="fitur" class="section">
+<!-- FITUR -->
+<section class="fitur" id="fitur">
 
-  <h2>Fitur Premium</h2>
+  <div class="title" data-aos="fade-up">
+    <span>PREMIUM FEATURE</span>
+    <h2>Semua Yang Kamu Butuhkan</h2>
+  </div>
 
-  <div class="grid">
+  <div class="fitur-grid">
 
-    <div class="card">
-      <h3>Signal Saham Harian</h3>
-      <p>
-        Rekomendasi saham potensial setiap hari trading.
-      </p>
+    <div class="fitur-card" data-aos="zoom-in">
+      <i class="fa-solid fa-bolt"></i>
+      <h3>Signal Harian</h3>
+      <p>Rekomendasi saham potensial setiap hari trading.</p>
     </div>
 
-    <div class="card">
+    <div class="fitur-card" data-aos="zoom-in">
+      <i class="fa-solid fa-chart-simple"></i>
       <h3>Analisa Teknikal</h3>
-      <p>
-        Analisa chart profesional dan update market realtime.
-      </p>
+      <p>Chart premium dan momentum market realtime.</p>
     </div>
 
-    <div class="card">
-      <h3>Watchlist Big Player</h3>
-      <p>
-        Pantau saham yang sedang diakumulasi market maker.
-      </p>
+    <div class="fitur-card" data-aos="zoom-in">
+      <i class="fa-solid fa-users"></i>
+      <h3>Diskusi Komunitas</h3>
+      <p>Belajar dan sharing bersama trader aktif.</p>
     </div>
 
-    <div class="card">
+    <div class="fitur-card" data-aos="zoom-in">
+      <i class="fa-solid fa-graduation-cap"></i>
       <h3>Edukasi Trading</h3>
-      <p>
-        Materi trading saham dari basic sampai advance.
-      </p>
+      <p>Materi saham dari basic sampai advance.</p>
+    </div>
+
+    <div class="fitur-card" data-aos="zoom-in">
+      <i class="fa-solid fa-bell"></i>
+      <h3>Realtime Alert</h3>
+      <p>Notifikasi entry & take profit realtime.</p>
+    </div>
+
+    <div class="fitur-card" data-aos="zoom-in">
+      <i class="fa-solid fa-shield"></i>
+      <h3>Risk Management</h3>
+      <p>Strategi menjaga modal tetap aman.</p>
     </div>
 
   </div>
 
 </section>
 
-<section id="membership" class="section">
+<!-- MEMBERSHIP -->
+<section class="membership" id="membership">
 
-  <h2>Paket Membership</h2>
+  <div class="title" data-aos="fade-up">
+    <span>PRICING</span>
+    <h2>Pilih Membership Kamu</h2>
+  </div>
 
-  <div class="grid">
+  <div class="price-grid">
 
-    <div class="price-card">
+    <a href="https://wa.me/6287832727925" class="price-card" data-aos="fade-up">
+
       <h3>Basic</h3>
+
       <h1>30K</h1>
-      <p>Signal Harian</p>
-    </div>
 
-    <div class="price-card premium">
+      <ul>
+        <li>Signal Harian</li>
+        <li>Watchlist</li>
+        <li>Market Update</li>
+      </ul>
+
+      <button>Gabung Sekarang</button>
+
+    </a>
+
+    <a href="https://wa.me/6287832727925" class="price-card premium" data-aos="fade-up">
+
+      <div class="best">BEST SELLER</div>
+
       <h3>Pro</h3>
+
       <h1>100K</h1>
-      <p>Signal + Edukasi</p>
-    </div>
 
-    <div class="price-card">
+      <ul>
+        <li>Signal Premium</li>
+        <li>Edukasi Trading</li>
+        <li>Realtime Alert</li>
+        <li>Private Group</li>
+      </ul>
+
+      <button>Gabung Sekarang</button>
+
+    </a>
+
+    <a href="https://wa.me/6287832727925" class="price-card" data-aos="fade-up">
+
       <h3>Sultan</h3>
+
       <h1>150K</h1>
-      <p>Full Premium Access</p>
+
+      <ul>
+        <li>Full Premium Access</li>
+        <li>Fast Response</li>
+        <li>Prioritas Signal</li>
+        <li>Mentoring</li>
+      </ul>
+
+      <button>Gabung Sekarang</button>
+
+    </a>
+
+  </div>
+
+</section>
+
+<!-- TESTIMONI -->
+<section class="testimoni" id="testimoni">
+
+  <div class="title" data-aos="fade-up">
+    <span>TESTIMONIAL</span>
+    <h2>Apa Kata Member?</h2>
+  </div>
+
+  <div class="testi-grid">
+
+    <div class="testi-card" data-aos="fade-up">
+      <p>
+        “Awalnya coba-coba join. Sekarang trading jauh lebih terarah dan profit konsisten.”
+      </p>
+
+      <div class="user">
+        <strong>Rizky A.</strong>
+        <span>Member 8 Bulan</span>
+      </div>
+    </div>
+
+    <div class="testi-card" data-aos="fade-up">
+      <p>
+        “Signalnya cepat dan entry point nya enak banget buat scalping maupun swing.”
+      </p>
+
+      <div class="user">
+        <strong>Fajar M.</strong>
+        <span>Member Pro</span>
+      </div>
+    </div>
+
+    <div class="testi-card" data-aos="fade-up">
+      <p>
+        “Worth it banget. Edukasinya mudah dipahami bahkan buat pemula.”
+      </p>
+
+      <div class="user">
+        <strong>Andi K.</strong>
+        <span>Member 1 Tahun</span>
+      </div>
     </div>
 
   </div>
 
 </section>
 
-<section id="testimoni" class="section">
-
-  <h2>Testimoni Member</h2>
-
-  <div class="grid">
-
-    <div class="card">
-      <p>
-        "Baru 2 minggu join sudah profit konsisten."
-      </p>
-      <strong>- Andi</strong>
-    </div>
-
-    <div class="card">
-      <p>
-        "Analisa sangat membantu entry saham."
-      </p>
-      <strong>- Rizky</strong>
-    </div>
-
-    <div class="card">
-      <p>
-        "Worth it banget buat belajar trading."
-      </p>
-      <strong>- Fajar</strong>
-    </div>
-
-  </div>
-
-</section>
-
-<section class="cta">
+<!-- CTA -->
+<section class="bottom-cta">
 
   <h2>
-    Mulai Trading Bersama Saham Pro
+    Mulai Trading Lebih Profesional
   </h2>
 
-  <a class="btn" href="https://wa.me/6287832727925">
+  <p>
+    Join ribuan member Saham Pro sekarang juga.
+  </p>
+
+  <a href="https://wa.me/6287832727925">
     Gabung Sekarang
   </a>
 
 </section>
 
+<!-- FOOTER -->
 <footer>
+
+  <div class="logo-area">
+    <img src="logo.png">
+    <span>Saham Pro</span>
+  </div>
+
   <p>
     © 2026 Saham Pro. All Rights Reserved.
   </p>
+
 </footer>
+
+<!-- AOS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+AOS.init({
+  duration:1000,
+  once:true
+});
+</script>
 
 </body>
 </html>
