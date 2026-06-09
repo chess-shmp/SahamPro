@@ -14,6 +14,11 @@ color:white;
 overflow-x:hidden;
 }
 
+:focus-visible {
+  outline: 3px solid #60a5fa;
+  outline-offset: 4px;
+}
+
 .blur{
 position:fixed;
 width:400px;
@@ -301,7 +306,8 @@ margin-bottom:15px;
 color:#cbd5e1;
 }
 
-.price-card button{
+.price-btn{
+text-align:center;
 width:100%;
 padding:16px;
 border:none;
