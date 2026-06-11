@@ -78,6 +78,12 @@ nav a:hover{
 opacity:1;
 }
 
+:focus-visible{
+outline:3px solid #60a5fa;
+outline-offset:4px;
+border-radius:inherit;
+}
+
 .hero{
 min-height:100vh;
 display:grid;
@@ -301,7 +307,9 @@ margin-bottom:15px;
 color:#cbd5e1;
 }
 
-.price-card button{
+.price-card .price-btn{
+display:block;
+text-align:center;
 width:100%;
 padding:16px;
 border:none;
