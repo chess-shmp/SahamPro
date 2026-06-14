@@ -145,6 +145,11 @@ box-shadow:0 0 30px rgba(37,99,235,.5);
 transform:translateY(-4px);
 }
 
+*:focus-visible{
+outline:3px solid #60a5fa;
+outline-offset:4px;
+}
+
 .secondary{
 border:1px solid rgba(255,255,255,.15);
 color:white;
@@ -301,7 +306,9 @@ margin-bottom:15px;
 color:#cbd5e1;
 }
 
-.price-card button{
+.price-card .price-btn{
+display:block;
+text-align:center;
 width:100%;
 padding:16px;
 border:none;
