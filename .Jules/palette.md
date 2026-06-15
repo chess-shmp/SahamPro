@@ -1,0 +1,3 @@
+## 2026-06-15 - Improving Interactive Semantics and Micro-UX
+**Learning:** Interactive elements like <button> must not be nested inside <a> tags as it violates HTML semantics and causes issues for screen readers. Using <span> or <div> styled as buttons within <a> tags is a valid and accessible alternative. Additionally, pre-filling WhatsApp messages reduces user friction by setting clear expectations and lowering the effort required to start a conversation.
+**Action:** Always check for interactive element nesting during audits. Use class-based styling for button-like elements inside links. Implement pre-filled messages for WhatsApp/social CTA links to improve conversion and UX.
