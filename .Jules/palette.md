@@ -1,0 +1,3 @@
+## 2026-06-16 - Micro-UX and Semantic Accessibility
+**Learning:** Nesting `<button>` inside `<a>` is invalid HTML and can cause unexpected behavior for screen readers and search engines. Additionally, providing context-aware pre-filled messages for WhatsApp CTA links significantly reduces user friction by setting clear expectations for the conversation.
+**Action:** Use `<span>` or `<div>` with `cursor: pointer` for button-like elements inside anchors to maintain valid HTML. Always look for opportunities to pre-fill messaging in communication links. Implement high-contrast `:focus-visible` styles to ensure keyboard accessibility without impacting visual design for mouse users.
