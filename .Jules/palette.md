@@ -1,0 +1,3 @@
+## 2026-06-26 - [Focus State Hierarchy and Interactive Nesting]
+**Learning:** In static landing pages with card-based layouts, nesting `<button>` elements inside `<a>` tags is a common semantic error that breaks screen readers and keyboard navigation. Additionally, when styling an internal `<span>` as a button within an `<a>`, the `:focus-visible` state should be applied only to the parent `<a>` to avoid redundant or unreachable focus rules.
+**Action:** Always replace nested buttons with `<span>` or `<div>` and apply `cursor: pointer` to maintain visual affordance. Ensure focus indicators are applied to the primary focusable container (the anchor) to provide a clear, unified focus ring.
