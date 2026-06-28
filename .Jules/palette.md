@@ -1,0 +1,3 @@
+## 2026-06-28 - Accessible CTA Links and Focus States
+**Learning:** Interactive elements nested inside anchor tags (like `<button>` inside `<a>`) are invalid HTML and cause fragmented accessibility trees. High-contrast `:focus-visible` styles are essential for keyboard navigation on dark-themed landing pages where default browser outlines are often invisible. Pre-filled WhatsApp messages significantly reduce user friction for service inquiries.
+**Action:** Always refactor nested buttons to `<span>` with appropriate block styling and use `aria-label` on complex link containers to provide a summary of the destination/purpose. Use `outline-offset` to prevent focus rings from being clipped by container boundaries.
