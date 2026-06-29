@@ -1,0 +1,3 @@
+## 2026-06-29 - [Accessibility & Conversion Improvements]
+**Learning:** Nested interactive elements (e.g., <button> inside <a>) cause validation errors and confusing behavior for screen readers. Pre-filling messaging links (like WhatsApp) reduces user friction and increases conversion by setting clear context. High-contrast focus indicators are essential for keyboard navigation on dark-themed landing pages.
+**Action:** Always refactor nested buttons to styled spans within anchors. Use aria-labels on complex container cards to provide a summary of content. Always append contextual pre-filled text to messaging CTAs.
