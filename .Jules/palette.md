@@ -1,0 +1,3 @@
+## 2026-07-06 - Accessible Card Actions
+**Learning:** Nesting <button> elements inside <a> tags is invalid HTML and causes navigation issues for screen readers. In card-based layouts where the entire container is a link, internal calls-to-action should be visually styled as buttons using <span> to maintain semantic integrity and prevent event bubbling conflicts.
+**Action:** Use styled <span> elements (e.g., `.price-btn`) instead of <button> when placing a visual CTA inside an anchor tag.
