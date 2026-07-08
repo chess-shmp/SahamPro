@@ -1,0 +1,3 @@
+## 2026-07-08 - Nested Interaction and Contextual CTA Enhancement
+**Learning:** Nesting `<button>` inside `<a>` is invalid HTML and can confuse screen readers or break event bubbling. Replacing the internal button with a `<span>` styled as a button maintains visual consistency while ensuring semantic validity. Additionally, adding pre-filled messages to WhatsApp CTA links (e.g., `?text=...`) significantly reduces user friction by setting clear expectations for the starting conversation.
+**Action:** Always verify HTML validity in landing pages with heavy CTA usage and favor pre-filled deep links for messaging platforms to improve the user journey.
