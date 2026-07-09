@@ -1,0 +1,3 @@
+## 2026-07-09 - Accessible Skip Links for Single-Page Landing Pages
+**Learning:** Single-page landing pages with fixed/sticky navigation headers often force keyboard users to tab through the entire menu before reaching the core value proposition. A 'Skip to Content' link is a low-effort, high-impact accessibility win that significantly improves the experience for power users and individuals with motor impairments.
+**Action:** Always implement a 'Skip to Content' link as the first focusable element on any page with a top navigation bar. Use absolute positioning and focus-based visual transitions (like sliding down) to keep it unobtrusive to mouse users while remaining fully discoverable for keyboard navigation.
