@@ -1,0 +1,3 @@
+## 2026-07-17 - Resolving Nested Interactives and Enhancing Keyboard Accessibility
+**Learning:** Nesting `<button>` within `<a>` tags violates HTML5 standards and breaks screen readers/keyboard tab-flows. We can resolve this while keeping the same visual design by changing the `<button>` to a `<span>` styled as a block element. Additionally, providing high-contrast `:focus-visible` styles with `outline-offset` is essential on dark-themed interfaces to support clear keyboard navigation without clipping issues.
+**Action:** Always replace nested button elements with inline-block or block spans inside anchor tags, update target selectors, and implement a robust `:focus-visible` outline for all interactive elements to ensure accessibility conformance.
