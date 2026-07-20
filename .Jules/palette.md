@@ -1,0 +1,3 @@
+## 2026-07-20 - Non-interative nesting and high-contrast navigation outline
+**Learning:** Interactive HTML elements like `<button>` must never be nested inside parent clickable elements like `<a>` cards. Doing so breaks document semantic flow, confuses screen readers, and causes buggy keyboard focus states. Instead, refactoring nested buttons to `<span>` elements styled identically to buttons preserves perfect validation and accessibility.
+**Action:** When styling spans to look like buttons within anchor cards, use `display: block` and `text-align: center` with explicitly defined `cursor: pointer` to maintain layout consistency and visual affordance, and always add outline-offset on `:focus-visible` to prevent focus clipping.
