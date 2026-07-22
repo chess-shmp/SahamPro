@@ -1,0 +1,3 @@
+## 2026-07-22 - Resolving Interactive Element Nesting within Anchor Links
+**Learning:** Nesting a `<button>` tag inside an anchor `<a>` tag results in invalid HTML, which compromises screen-reader parsing and breaks expected focus behavior. By refactoring the inner `<button>` to a `<span class="price-btn">` styled with `display: block; text-align: center; cursor: pointer;`, visual parity is preserved while restoring clean focus hierarchy and semantic validity.
+**Action:** Always avoid nesting interactive elements (e.g., buttons, inputs, other links) inside focusable anchor tags. Instead, style semantic spans or divs to visually represent buttons when wrapping an entire card in a link.
