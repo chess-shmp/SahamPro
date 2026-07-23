@@ -1,0 +1,5 @@
+## 2026-07-23 - Accessibility improvements for stock community pricing card and external CTA links
+
+**Learning:** Nesting interactive tags such as `<button>` inside an interactive `<a>` tag results in invalid HTML, violates W3C standards, and triggers erratic keyboard navigation / screen reader announcements. For landing pages utilizing community pricing cards with links pointing to external channels like WhatsApp, it is a micro-UX best practice to use `target="_blank"` with `rel="noopener noreferrer"` and style the CTA elements with `cursor: pointer` while maintaining standard-compliant semantic elements (e.g., `<span>` instead of `<button>`). Furthermore, prepending contextual, pre-filled query parameters to WhatsApp URL queries drastically reduces user friction and increases lead conversions.
+
+**Action:** Ensure nested button elements within link tags are refactored to inline elements like `<span>` with `display: block` and `text-align: center`, support clean keyboard focus indicators using outline/outline-offset matching the design system, and append pre-filled message text parameters when constructing external messaging CTA URLs.
