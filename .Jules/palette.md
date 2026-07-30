@@ -1,0 +1,3 @@
+## 2026-07-30 - Refactoring Nested Interactive Elements & Link UX Enhancement
+**Learning:** Nested interactive HTML elements (like a `<button>` inside an `<a>` tag) lead to invalid, unpredictable semantic structures and problematic screen reader behaviors. Additionally, plain contact links without pre-filled message text add friction by forcing users to manually compose messages, which degrades conversion rates.
+**Action:** Replace any nested buttons within card anchors with `span` elements styled identically. Enhance all direct communication CTA links (e.g., WhatsApp) by appending pre-filled, localized content parameters (`?text=...`) to minimize user friction.
