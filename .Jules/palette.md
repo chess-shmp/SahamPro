@@ -1,0 +1,3 @@
+## 2026-08-03 - Nested Interactive Elements in Anchor Cards
+**Learning:** Nesting interactive elements like <button> inside an <a> tag is invalid HTML and breaks keyboard navigation and screen readers. When a card link is a container link, any inner button should be a non-interactive element like <span> styled as a button (with display: block and text-align: center) to preserve visual layout while correcting accessibility semantic tree.
+**Action:** Replace nested interactive components within links with <span> or <div> elements styled to mimic buttons, and handle keyboard focus on the parent anchor container.
