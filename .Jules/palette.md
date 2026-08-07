@@ -1,0 +1,5 @@
+# Palette's Journal
+
+## 2026-08-07 - Nested Interactive Elements and Accessibility in Static Landing Pages
+**Learning:** Nesting actual `<button>` elements within an outer `<a>` wrapper violates HTML validity and causes screen readers to redundantly announce interactive actions twice or break focus flow completely. To prevent this while retaining the visual hierarchy and CTA clickable surface area, refactoring the nested button into a semantically inert but visually styled `<span>` (or `<div>`) element with `display: block` and custom cursor pointer is extremely elegant. Furthermore, configuring robust, high-contrast `:focus-visible` styles with a clear `outline-offset` ensures focus rings are not clipped by boundaries of parent layout wrappers.
+**Action:** Always inspect the landing page structure for nested interactive elements (`button` inside `a`). Refactor nested buttons to styled `span` elements, and configure outline-offset on high-contrast focus rings to ensure seamless keyboard navigation.
