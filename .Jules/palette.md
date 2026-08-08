@@ -1,0 +1,3 @@
+## 2026-08-08 - Nested Buttons inside Anchor Tags
+**Learning:** Nesting a `<button>` inside an `<a>` anchor tag violates HTML specification and creates accessibility barriers. Screen readers may exhibit erratic behavior, and keyboard navigation becomes unpredictable because both elements are interactive focus targets. Refactoring the inner `<button>` to a non-interactive `<span>` styled as a button maintains semantic cleanliness, keeps HTML valid, and ensures correct screen reader and focus behaviors.
+**Action:** Always represent interactive CTA actions inside card links using semantic, non-interactive elements (like a `<span>` with display: block; text-align: center; or appropriate layout styling) rather than nesting actual `<button>` tags within anchors.
