@@ -301,7 +301,9 @@ margin-bottom:15px;
 color:#cbd5e1;
 }
 
-.price-card button{
+.price-card .price-btn{
+display:block;
+text-align:center;
 width:100%;
 padding:16px;
 border:none;
@@ -310,6 +312,12 @@ background:linear-gradient(90deg,#2563eb,#06b6d4);
 color:white;
 font-weight:700;
 cursor:pointer;
+}
+
+a:focus-visible{
+outline:3px solid #60a5fa;
+outline-offset:4px;
+border-radius:14px;
 }
 
 .premium{
