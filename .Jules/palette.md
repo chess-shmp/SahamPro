@@ -1,0 +1,3 @@
+## 2026-08-12 - Nested Interactive Elements inside Anchor Links
+**Learning:** Nesting interactive `<button>` tags inside parent `<a>` tags violates HTML validation and disrupts screen readers. For proper semantic code and accessibility, the inner clickable element should be represented as a non-interactive styled `<span>` with `display: block` and `cursor: pointer` while keeping the parent `<a>` as the main focusable target.
+**Action:** Always represent button-like triggers inside card links as a `<span>` styled like a button instead of a nested `<button>`. Ensure appropriate fallback styling (`display: block` and `text-align: center`) is present to maintain layout uniformity.
